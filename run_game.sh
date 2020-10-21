@@ -23,6 +23,8 @@ echo "Running game..."
 java GuessingGame
 
 echo "Done!"
+
 echo "Removing class files..."
 rm *.class
+
 ls
