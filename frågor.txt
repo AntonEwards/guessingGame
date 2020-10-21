@@ -1,0 +1,30 @@
+Siktar på VG - Anton Ewards
+
+1. Add använder man för att tex lägga till ändringarna i repository, medans i commit
+berättar man ändringen.
+
+2. Push innebär att man vill skicka sin information till sin github repository, där
+man sparar alla commits/filer osv. Pull tar information från github och sätter ihop
+det med din lokala repository
+
+3. När man använder log vill man se commits och ändringar, allt sparas i loggen. Status
+däremot vill man se om man måste adda något till repository, om det är någon ändring
+som man inte fått med. 
+
+4. Jag tycker att det ska vara korta men bra meningar, man behöver liksom inte överdriva
+med information, man skriver kortfattat det som man har ändrat och jag tycker det räcker
+med det.
+
+5. Git revert kan göra "undo" på vilka commits som helst medans reset bara kan göra
+"undo" på den senaste commiten, det är just oftast bäst att använda revert då den kan
+nå vilken commit som helst, tex om man hittat en bug så kan man lättare gå tillbaka
+och reverta, det som är dock är bättre med reset är att det går snabbare att ta bort
+den senaste commiten. Det är också säkrare med reset då man inte ändrar i de andra commitsen
+som är längre bak i projektet på något sätt. Jag testade att köra 'git revert 046691d' 
+på en commit och sen git log, loggen beskrev commiten som "Revert 'added file'". (This reverts
+commit 046691d....) så man ser i loggen att den är revertad. När jag sen tog reset direkt 
+efter revert commandet(git reset 046691d), ångrade det sig och tog tillbaka den revertade commiten och lade
+den längst upp på loggen (git log).    
+
+
+Anton Ewards Java20
